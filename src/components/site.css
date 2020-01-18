@@ -1,7 +1,11 @@
-.mapContainer {
 
-    position: absolute;
-    top: 0;
+
+.mapContainer {
+    height:100%;
+    width: 95%;
+    overflow: scroll;
+    position: relative;
+    top: 10;
     right: 0;
     left: 0;
     bottom: 0;
@@ -9,22 +13,33 @@
     max-height: 512px;
     translate: (width/2,height/2);
     align-items: center;
+    cursor: pointer;
+}
+
+.quakeContainer {
+    
+    padding: 0%;
+    height: 90%;
+    width: 95%;
+    overflow:scroll;
+    display: flex !important;
+    position: absolute;
+    font-weight: regular;
+    align-items: justify;
+    letter-spacing: 1px;
     
 }
 
-.sidebarStyle {
+ul {
+    
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+    align-items: justify !important;
+}
 
-    border-radius: 7px;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 12px;
-    opacity: 0.70;
-    background-color: #010101;
-    color:#64e01c;
-    z-index: 1 !important;
-    padding: 6px;
-    font-weight: regular;
-    font-family: 'Roboto Slab', serif;
+h1 {
+
+    margin: auto;
+
 }
