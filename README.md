@@ -16,7 +16,10 @@ Change to hooks
 Check the [mapbox](https://www.mapbox.com/ "mapbox") documentation on how to get your own API key
 
 ## To run locally 
+
 Clone the repo
+
+
 create an .env file
 The .env file should contain the following line
 
