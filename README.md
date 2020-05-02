@@ -8,9 +8,9 @@ You can freely edit and use the code as long as there is mention of this repo.
 Fetch data with axios and use mapbox to display the data.
 
 ## Possible improvements
-Change to hooks
-Have the markers display on hover
-Improve CSS (heavily considering replacing semantic UI react)
+Change to hooks |
+ | Have the markers display on hover
+| Improve CSS (heavily considering replacing semantic UI react)
 
 ## PLEASE MAKE YOUR OWN MAPBOX API KEY TO MAKE THIS WORK
 Check the mapbox.com documentation on how to get your own API key

@@ -27,7 +27,7 @@ class EarthquakeContainer extends Component {
 
     return (
       <div>
-        <ul>{quakeList}</ul>
+        <ul> { quakeList } </ul>
       </div>
     );
   }

@@ -7,7 +7,9 @@ import './site.css';
 class App extends React.Component {
   
   state = {
+
       quakes: []      
+    
     }
 
     onPageLoad = async (quakes) => {
@@ -28,8 +30,7 @@ class App extends React.Component {
         }
       });
 
-
-      this.setState({ quakes:prData })
+      this.setState({ quakes: prData })
     
     };
       
@@ -40,26 +41,26 @@ class App extends React.Component {
     }
     render() {
     return(
-    <div className='App'>
-    <div className='ui huge header'><h1>USGS All Day Seismic Data for Puerto Rico</h1></div>
-    <div className='ui grid relaxed stackable content'>
-          
-          <div className='mapContainer twelve wide column'>
-              <EarthquakeMap quakes={this.state.quakes}/>
-            </div>   
-          <div className='four wide column'>
-            <div className='ui medium header'>Latest Seismic Events</div>
-            <div className='quakeContainer'>
-              <div>
-              <EarthquakeContainer quakes={this.state.quakes}/>
+    <div className= 'App'>
+      <div className= 'ui huge centered container header'><h1>USGS All Day Seismic Data for Puerto Rico</h1></div>
+        <div className= 'ui stackable container grid'>
+          <div className='ui row'>
+              <div className= 'ten wide column'>
+                  <div className= 'mapContainer'> <EarthquakeMap quakes= { this.state.quakes }/></div>
               </div>
-              
-          </div>
-        </div>      
+              <div className= 'six wide column'>
+                  <div className= 'ui medium header'> Latest Seismic Events</div>
+                   <div className= 'quakeContainer'>
+                     <EarthquakeContainer quakes= {
+                        this.state.quakes 
+                        }
+                      />
+                     </div>
+                  </div>      
+              </div>                 
+            </div>
         </div>
-      </div>
-    
-    );
-  }
-  }
+        );
+      }
+}
 export default App;

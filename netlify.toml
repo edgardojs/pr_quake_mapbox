@@ -1,0 +1,4 @@
+[build]
+base = "pr_quake_data/"
+publish = "pr_quake_data/build"
+commmand = "npm run build"
