@@ -20,9 +20,9 @@ Check the [mapbox](https://www.mapbox.com/ "mapbox") documentation on how to get
 Clone the repo
 
 create an .env file
-The .env file should contain the following line
+The .env file should contain the following line:
 
-REACT_APP_API_KEY= YOUR_API_KEY
+`REACT_APP_API_KEY= YOUR_API_KEY`
 
 Once you have your API key, you can run this with your preferred method `npm start` or `yarn start`.
 
